@@ -1,4 +1,4 @@
- <script>
+
 const themeToggleBtn = document.getElementById('theme-toggle');
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -17,4 +17,4 @@ themeToggleBtn.addEventListener('click', toggleTheme);
     const useDark = savedTheme === 'dark' || (!savedTheme && prefersDark);
     setTheme(useDark);
 })();
-    </script>
+
