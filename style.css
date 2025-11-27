@@ -4,8 +4,8 @@
     --header-bg: #73808c;
     --header-text: #fff;
     --accent: #0a7ea2;
-
-    --card-bg: #fafbfc;
+    --section-bg: #fafbfc;
+    --card-bg: #ffffff;
     --card-border: #ddd;
     --shadow: 0 0 8px rgba(0,0,0,0.08);
 }
@@ -18,6 +18,7 @@ body {
     color: var(--main-text);
     transition: background 0.3s, color 0.3s;
 }
+
 header {
     display: flex;
     align-items: center;
@@ -26,10 +27,12 @@ header {
     color: var(--header-text);
     padding: 1.5rem 2rem 1.2rem 2rem;
 }
+
 .profile {
     display: flex;
     align-items: center;
 }
+
 #profile-img {
     width: 130px;
     height: 130px;
@@ -39,16 +42,19 @@ header {
     box-shadow: var(--shadow);
     flex-shrink: 0;
 }
+
 header h1 {
     margin: 0 0 0.3rem 0;
     font-size: 2rem;
     font-weight: 700;
 }
+
 header p {
     margin: 0;
     font-size: 1.1rem;
     font-weight: 400;
 }
+
 #theme-toggle {
     background: none;
     border: none;
@@ -57,14 +63,16 @@ header p {
     color: var(--header-text);
     transition: color 0.2s;
 }
+
 main {
     max-width: 900px;
     margin: 2rem auto;
     padding: 1rem;
     color: var(--main-text);
 }
+
 section {
-    background: var(--card-bg);
+    background: var(--section-bg);
     border: 1px solid var(--card-border);
     border-radius: 10px;
     padding: 1.5rem;
@@ -72,9 +80,11 @@ section {
     box-shadow: var(--shadow);
     transition: background 0.3s, color 0.3s;
 }
+
 h2, h3, p, li {
     color: var(--main-text);
 }
+
 .project {
     margin-bottom: 1.5rem;
     padding: 1rem;
@@ -84,6 +94,7 @@ h2, h3, p, li {
     background: var(--card-bg);
     transition: background 0.3s, color 0.3s;
 }
+
 footer {
     text-align: center;
     padding: 1rem 0;
@@ -92,13 +103,16 @@ footer {
     margin-top: 2rem;
     border-radius: 0 0 8px 8px;
 }
+
 a {
     color: var(--accent);
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 @media (max-width: 600px) {
     main {
         padding: 0.5rem;
@@ -111,20 +125,35 @@ a:hover {
         margin-bottom: 0.5rem;
     }
 }
-/* Dark Mode Toggle */
+
 body.dark {
     --main-bg: #181822;
     --main-text: #f3f3f3;
     --header-bg: #222233;
     --header-text: #e6e6ff;
     --accent: #41c8e1;
-    --card-bg: #1f1f2e;
+    --section-bg: #1f1f2e;
+    --card-bg: #26263a;
     --card-border: #393950;
 }
-body.dark main, body.dark section, body.dark .project {
-    background: var(--card-bg);
+
+body.dark main {
+    background: var(--main-bg);
     color: var(--main-text);
 }
+
+body.dark section {
+    background: var(--section-bg);
+    border: 1px solid var(--card-border);
+    color: var(--main-text);
+}
+
+body.dark .project {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    color: var(--main-text);
+}
+
 body.dark a {
     color: var(--accent);
 }
