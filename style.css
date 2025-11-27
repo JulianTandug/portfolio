@@ -118,7 +118,7 @@ body.dark {
     --header-bg: #222233;
     --header-text: #e6e6ff;
     --accent: #41c8e1;
-    --card-bg: #232339;
+    --card-bg: #1f1f2e;
     --card-border: #393950;
 }
 body.dark main, body.dark section, body.dark .project {
