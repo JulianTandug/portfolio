@@ -4,7 +4,7 @@ const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 function setTheme(isDark) {
     document.body.classList.toggle('dark', isDark);
-    themeToggleBtn.innerHTML = isDark ? '<span>☀️</span>' : '<span>🌙</span>';
+    themeToggleBtn.innerHTML = isDark ? '<span>Toggle Light</span>' : '<span>Toggle Dark</span>';
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
 }
 function toggleTheme() {
