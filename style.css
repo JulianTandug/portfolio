@@ -152,6 +152,3 @@ body.dark .repo {
 body.dark a {
     color: var(--accent);
 }
-body.dark #profile-img {
-    border-color: var(--accent);
-}
