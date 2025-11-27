@@ -31,8 +31,8 @@ header {
     align-items: center;
 }
 #profile-img {
-    width: 90px;
-    height: 90px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--accent);
@@ -61,14 +61,13 @@ main {
     max-width: 900px;
     margin: 2rem auto;
     padding: 1rem;
-    background: #fff;
+    background: var(--card-bg);
     box-shadow: var(--shadow);
     border-radius: 8px;
+    color: var(--main-text);
 }
-h2 {
-    color: #2d2d2d;
-    margin-top: 2rem;
-    margin-bottom: 0.7rem;
+h2, h3, p, li {
+    color: var(--main-text);
 }
 #repo-list {
     display: grid;
@@ -99,7 +98,7 @@ h2 {
 .repo p {
     margin: 0.3rem 0;
     font-size: 0.96rem;
-    color: #444;
+    color: var(--main-text);
 }
 footer {
     text-align: center;
@@ -131,7 +130,7 @@ a:hover {
         margin-bottom: 0.5rem;
     }
 }
-/*DaRK MODEEEEE */
+/* Dark Mode */
 body.dark {
     --main-bg: #181822;
     --main-text: #f3f3f3;
@@ -142,17 +141,17 @@ body.dark {
     --card-border: #393950;
 }
 body.dark main {
-    background: #232339;
-    color: #e6e6ff;
+    background: var(--card-bg);
+    color: var(--main-text);
 }
 body.dark .repo {
     background: #2c2c4a;
     border-color: #393950;
-    color: #e3e3ff;
+    color: var(--main-text);
 }
 body.dark a {
-    color: #41c8e1;
+    color: var(--accent);
 }
 body.dark #profile-img {
-    border-color: #41c8e1;
+    border-color: var(--accent);
 }
