@@ -246,3 +246,38 @@ body.dark a {
         max-width: 100%;
     }
 }
+
+/* ===== AWARD IMAGES (Fixed Size) ===== */
+.award-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    flex: 1;
+    min-width: 180px;
+    max-width: 450px; /* Adjust this based on how wide you want them */
+}
+
+.award-images img {
+    width: 180px;          /* 👈 Fixed width */
+    height: 240px;         /* 👈 Fixed height (vertical phone/portrait style) */
+    object-fit: cover;     /* 👈 Crops the image to fill the box perfectly */
+    border-radius: 10px;
+    border: 2px solid var(--card-border);
+    box-shadow: var(--shadow);
+    background: #fff;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.award-images img:hover {
+    transform: scale(1.05);
+    border-color: var(--accent);
+}
+
+/* For landscape images (like wide certificates), adjust height */
+/* If your certificate is landscape, you can make it wider */
+.award-images img:first-child {
+    width: 220px;          /* 👈 Wider for certificate */
+    height: 160px;         /* 👈 Shorter for landscape */
+}
+
+/* If both images are portrait/vertical, remove the :first-child rule */
