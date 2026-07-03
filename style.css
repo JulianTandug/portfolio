@@ -157,3 +157,92 @@ body.dark .project {
 body.dark a {
     color: var(--accent);
 }
+
+/* ===== NEW: Final Project Screenshots ===== */
+.project-screenshots {
+    margin-top: 1.5rem;
+}
+
+.screenshot-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-top: 0.8rem;
+}
+
+.screenshot-grid img {
+    flex: 1 1 280px; /* flexible, minimum 280px wide */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid var(--card-border);
+    box-shadow: var(--shadow);
+    background: var(--card-bg);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.screenshot-grid img:hover {
+    transform: scale(1.02);
+    border-color: var(--accent);
+}
+
+/* ===== NEW: Certificates Grid ===== */
+.certificate-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+    margin-top: 0.8rem;
+    justify-content: flex-start;
+}
+
+.cert-item {
+    flex: 1 1 200px; /* flexible, minimum 200px */
+    max-width: 280px;
+    text-align: center;
+    padding: 1.2rem 1rem;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    transition: background 0.3s, color 0.3s, transform 0.2s ease;
+}
+
+.cert-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.cert-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3; /* nice rectangular frame for certs */
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid var(--card-border);
+    margin-bottom: 0.8rem;
+    background: #fff; /* fallback for transparent images */
+}
+
+.cert-item h3 {
+    margin: 0.4rem 0 0.2rem;
+    font-size: 1.1rem;
+    color: var(--main-text);
+}
+
+.cert-item p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--main-text);
+    opacity: 0.8;
+}
+
+/* small screen adjustment */
+@media (max-width: 600px) {
+    .screenshot-grid img {
+        flex: 1 1 100%;
+    }
+    .cert-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
