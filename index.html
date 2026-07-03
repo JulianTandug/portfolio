@@ -12,7 +12,6 @@
             <img src="Jtandugprofile.png" alt="Julian Tandug" id="profile-img">
             <div>
                <h1>Julian Tandug <a href="https://www.merriam-webster.com/dictionary/portfolio" target="_blank">Portfolio</a></h1>
-              
             </div>
         </div>
         <button id="theme-toggle" aria-label="Toggle dark/light theme">
@@ -21,11 +20,13 @@
     </header>
 
     <main>
+        <!-- ABOUT ME -->
         <section id="about">
             <h2>About Me</h2>
             <p>Hi! I'm Julian, a novice programmer currently studying HTML, CSS, and JavaScript. Welcome to my portfolio.</p>
         </section>
 
+        <!-- ACHIEVEMENTS -->
         <section id="achievements">
             <h2>Achievements & Certifications</h2>
             <ul>
@@ -35,59 +36,107 @@
             </ul>
         </section>
 
-       <section id="previous-projects">
-    <h2>Previous Projects</h2>
+        <!-- ==== NEW: FINAL PROJECT (HCI) ==== -->
+        <section id="final-project">
+            <h2>Final Project: <span id="project-title">[Insert Your HCI Project Title Here]</span></h2>
+            <p id="project-desc">
+                This is the final output for our Human-Computer Interaction course. 
+                It focuses on [briefly describe your project, e.g., usability testing, iterative design, and user-centric interfaces].
+            </p>
+            <p>
+                <strong>Prototype Link:</strong> 
+                <a href="#" target="_blank" id="project-link">https://your-prototype-link.com</a>
+            </p>
+            
+            <div class="project-screenshots">
+                <h3>📷 Final Interface Screenshots</h3>
+                <div class="screenshot-grid">
+                    <img src="final-project-ss1.png" alt="Final Project Screenshot 1">
+                    <img src="final-project-ss2.png" alt="Final Project Screenshot 2">
+                </div>
+            </div>
+        </section>
 
-    <div class="project">
-        <h3>Calorie Tracker</h3>
-        <p>A Java CRUD-based application designed for tracking and managing daily calorie intake.</p>
-        <p><strong>Tech Stack:</strong> Java, CRUD Operations</p>
-        <p><a href="https://github.com/JulianTandug/Ctracker" target="_blank">View on GitHub</a></p>
-    </div>
-
-    <div class="project">
-        <h3>EasyE</h3>
-        <p>A C# WinForms Application to manage events and its participants.</p>
-        <p><strong>Tech Stack:</strong> C#, MySQL, WinForms</p>
-        <p><a href="https://github.com/JulianTandug/EasyEv3" target="_blank">View on GitHub</a></p>
-    </div>
-
-           <div class="project">
-    <h3>GreenSense — Landing Page</h3>
-    <p>Responsive landing page for GreenSense (HTML / CSS ).</p>
-    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
-    <p><a href="https://juliantandug.github.io/LandingPageG-GreenSense/" target="_blank" rel="noopener noreferrer">View live</a></p>
-</div>
+        <!-- PREVIOUS PROJECTS -->
+        <section id="previous-projects">
+            <h2>Previous Projects</h2>
 
             <div class="project">
-        <h3>Machine Problem — Input Cleaner</h3>
-        <p>A simple webpage that takes user input and outputs the same text with all spaces removed.</p>
-        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
-        <p><a href="https://juliantandug.github.io/Task3/" target="_blank">View live</a></p>
-    </div>
+                <h3>Calorie Tracker</h3>
+                <p>A Java CRUD-based application designed for tracking and managing daily calorie intake.</p>
+                <p><strong>Tech Stack:</strong> Java, CRUD Operations</p>
+                <p><a href="https://github.com/JulianTandug/Ctracker" target="_blank">View on GitHub</a></p>
+            </div>
 
-    <div class="project">
-        <h3>Machine Problem — Email Validator</h3>
-        <p>A lightweight email validation tool that checks if the user's input is a valid email format.</p>
-        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
-        <p><a href="https://juliantandug.github.io/Task3.2/" target="_blank">View live</a></p>
-    </div>
-             <div class="project">
-        <h3>Minecraft API Project</h3>
-        <p>A web application that interacts with the Minecraft rest API to fetch items and their descriptions.</p>
-        <p><strong>Tech Stack:</strong> JavaScript, HTML, CSS, Minecraft API</p>
-        <p><a href="https://minecraftprojecttestby-tandug.vercel.app/" target="_blank" rel="noopener noreferrer">View live</a></p>
-    </div>
+            <div class="project">
+                <h3>EasyE</h3>
+                <p>A C# WinForms Application to manage events and its participants.</p>
+                <p><strong>Tech Stack:</strong> C#, MySQL, WinForms</p>
+                <p><a href="https://github.com/JulianTandug/EasyEv3" target="_blank">View on GitHub</a></p>
+            </div>
 
-           <div class="project">
-    <h3>BuyDaddyAI — KMart Smart Ordering Website</h3>
-    <p>An online KMart-style store website featuring an AI chatbot called <strong>BuyDaddy</strong> that helps customers navigate the menu, answer questions, and assist with product selection. The system also includes an admin panel for managing AI prompts and updating menu items.</p>
-    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, AI Chatbot Integration</p>
-    <p><a href="https://buydaddyai-gamcheonmartwebsite-ow7t.vercel.app/" target="_blank">View live</a></p>
-</div>
-           
-</section>
+            <div class="project">
+                <h3>GreenSense — Landing Page</h3>
+                <p>Responsive landing page for GreenSense (HTML / CSS ).</p>
+                <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                <p><a href="https://juliantandug.github.io/LandingPageG-GreenSense/" target="_blank" rel="noopener noreferrer">View live</a></p>
+            </div>
 
+            <div class="project">
+                <h3>Machine Problem — Input Cleaner</h3>
+                <p>A simple webpage that takes user input and outputs the same text with all spaces removed.</p>
+                <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                <p><a href="https://juliantandug.github.io/Task3/" target="_blank">View live</a></p>
+            </div>
+
+            <div class="project">
+                <h3>Machine Problem — Email Validator</h3>
+                <p>A lightweight email validation tool that checks if the user's input is a valid email format.</p>
+                <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                <p><a href="https://juliantandug.github.io/Task3.2/" target="_blank">View live</a></p>
+            </div>
+
+            <div class="project">
+                <h3>Minecraft API Project</h3>
+                <p>A web application that interacts with the Minecraft rest API to fetch items and their descriptions.</p>
+                <p><strong>Tech Stack:</strong> JavaScript, HTML, CSS, Minecraft API</p>
+                <p><a href="https://minecraftprojecttestby-tandug.vercel.app/" target="_blank" rel="noopener noreferrer">View live</a></p>
+            </div>
+
+            <div class="project">
+                <h3>BuyDaddyAI — KMart Smart Ordering Website</h3>
+                <p>An online KMart-style store website featuring an AI chatbot called <strong>BuyDaddy</strong> that helps customers navigate the menu, answer questions, and assist with product selection. The system also includes an admin panel for managing AI prompts and updating menu items.</p>
+                <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, AI Chatbot Integration</p>
+                <p><a href="https://buydaddyai-gamcheonmartwebsite-ow7t.vercel.app/" target="_blank">View live</a></p>
+            </div>
+        </section>
+
+        <!-- ==== NEW: CERTIFICATES SECTION ==== -->
+        <section id="certificates">
+            <h2>📜 Certificates & Seminars</h2>
+            <div class="certificate-grid">
+                
+                <div class="cert-item">
+                    <img src="cert-innovision2026.png" alt="CCIS Innovision 2026 Certificate">
+                    <h3>CCIS Innovision 2026</h3>
+                    <p>Certificate of Participation</p>
+                </div>
+
+                <div class="cert-item">
+                    <img src="cert-coursera.png" alt="Coursera Certificate">
+                    <h3>Coursera Certification</h3>
+                    <p>[e.g., Google UX Design / Meta Front-End]</p>
+                </div>
+
+                <div class="cert-item">
+                    <img src="cert-other.png" alt="Other Seminar Certificate">
+                    <h3>Webinar / Workshop</h3>
+                    <p>[Name of the seminar or competition]</p>
+                </div>
+
+                <!-- Add more .cert-item blocks here if you have more certificates -->
+            </div>
+        </section>
     </main>
 
     <footer>
