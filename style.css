@@ -158,7 +158,7 @@ body.dark a {
     color: var(--accent);
 }
 
-/* ===== NEW: Final Project Screenshots ===== */
+/* ===== Final Project Screenshots (Fixed Size for Phone Images) ===== */
 .project-screenshots {
     margin-top: 1.5rem;
 }
@@ -166,14 +166,14 @@ body.dark a {
 .screenshot-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.2rem;
+    gap: 1.5rem;
     margin-top: 0.8rem;
+    justify-content: flex-start; /* Align items to the left */
 }
 
 .screenshot-grid img {
-    flex: 1 1 280px; /* flexible, minimum 280px wide */
-    max-width: 100%;
-    height: auto;
+    width: 170px;          /* 👈 Fixed width for vertical phone images */
+    height: auto;           /* Height scales automatically to maintain aspect ratio */
     border-radius: 10px;
     border: 2px solid var(--card-border);
     box-shadow: var(--shadow);
@@ -182,7 +182,7 @@ body.dark a {
 }
 
 .screenshot-grid img:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
     border-color: var(--accent);
 }
 
